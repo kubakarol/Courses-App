@@ -1,0 +1,54 @@
+{
+  "name": "@img/sharp-win32-x64",
+  "version": "0.33.3",
+  "description": "Prebuilt sharp for use with Windows x64",
+  "author": "Lovell Fuller <npm@lovell.info>",
+  "homepage": "https://sharp.pixelplumbing.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovell/sharp.git",
+    "directory": "npm/win32-x64"
+  },
+  "license": "Apache-2.0 AND LGPL-3.0-or-later",
+  "funding": {
+    "url": "https://opencollective.com/libvips"
+  },
+  "preferUnplugged": true,
+  "files": [
+    "lib",
+    "versions.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "exports": {
+    "./sharp.node": "./lib/sharp-win32-x64.node",
+    "./package": "./package.json",
+    "./versions": "./versions.json"
+  },
+  "engines": {
+    "node": "^18.17.0 || ^20.3.0 || >=21.0.0",
+    "npm": ">=9.6.5",
+    "yarn": ">=3.2.0",
+    "pnpm": ">=7.1.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jwt-token": "^1.0.9",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "sharp": "^0.33.4"
+  }
+}
